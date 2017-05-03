@@ -5,7 +5,7 @@ var searchForm = require('./../holidays/search.form.page');
 var cookiesPanel = require('./cookies.page.js');
 
 /**
- * Represents home page
+ * Represents Home page
  */
 module.exports = {
     HomePage: {
