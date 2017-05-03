@@ -2,13 +2,15 @@
 Home page search demo using Protractor with Cucucmber
 
 ### Pre-requisites:
-   1. nodejs
-   1. npm
+   1. Install nodejs
+   1. Install npm
    
 ### Installation:
-   1. clone the repository https://github.com/maxski/thomas-cook-demo
-   1. open folder thomas-cook-demo
-   1. npm install
+   1. Clone the repository https://github.com/maxski/thomas-cook-demo
+   1. Open folder thomas-cook-demo
+   1. Run: npm install
+   1. Check by running: webdriver-manager start
+
 ### Run tests
    1. Against cucumber: protractor config.js
    1. Against jasmine: protractor jasmine/config.js
