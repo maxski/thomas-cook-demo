@@ -5,7 +5,10 @@ var homePage = require('./../../pages/general/home.page.js');
 var searchForm;
 var searchResults;
 
-    var steps = function() {
+/**
+ * Steps for holidays search from Home page
+ */
+var steps = function() {
     this.Given(/^I am a customer on the Homepage "([^"]*)"$/, function(site) {
         page.open(site);
         homePage.verifyOpened();
