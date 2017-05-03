@@ -6,7 +6,7 @@ Home page search demo using Protractor with Cucucmber
    1. Install npm
    
 ### Installation:
-   1. Clone the repository https://github.com/maxski/thomas-cook-demo
+   1. Clone the repository https://github.com/maxski/thomas-cook-demo.git
    1. Open folder thomas-cook-demo
    1. Run: npm install
    1. Check by running: webdriver-manager start
