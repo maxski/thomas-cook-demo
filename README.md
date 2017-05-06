@@ -10,6 +10,7 @@ Home page search demo using Protractor with Cucucmber
    1. Open folder thomas-cook-demo
    1. Run: npm install
    1. Check by running: webdriver-manager start
+   1. Check that correct binary path set in config file for Chrome.
 
 ### Run tests
    1. Against cucumber: protractor config.js
