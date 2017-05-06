@@ -9,7 +9,7 @@ var searchResults;
 describe('Home page search using parameters provided', function() {
 
     it('Given I am a customer on the Homepage', function() {
-        page.open('https://www.thomascook.com/');
+        page.open(browser.baseUrl);
         homePage.verifyOpened();
     });
 
@@ -18,20 +18,27 @@ describe('Home page search using parameters provided', function() {
     });
 
     it('And From: Any London To: Turkey, Any', function() {
-        searchForm.enterFlyingFrom('Any London');
-        searchForm.enterWhereTo('Turkey, Any');
+        var from = 'Any London';
+        var whereTo = 'Turkey, Any';
+        searchForm.enterFlyingFrom(from);
+        searchForm.enterWhereTo(whereTo);
     });
 
     it('And Days to Departure: > 200 days ', function() {
-        searchForm.setDate('200');
+        var days = 200;
+        searchForm.setDate(days);
     });
-
     it('And Duration: I don\'t mind', function() {
-        searchForm.selectDuration('I don\'t mind');
+        var duration = 'I don\'t mind';
+        searchForm.selectDuration(duration);
     });
 
     it('And Room 1: 2 Adults, 1 Child, 1 Infant', function() {
-        searchForm.selectRoom('1', '2', '1', '1');
+        var adults = 2;
+        var room = 1;
+        var children = 1;
+        var infant = 1;
+        searchForm.selectRoom(room , adults, children, infant);
     });
 
     it('I search using the above preferences', function() {
